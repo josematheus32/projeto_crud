@@ -1,44 +1,60 @@
-form{
-  width: 600px;
-  margin: 30px auto;
-  text-align: center;
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #333;
+  color: #f5f5f7;
+}
 
-  background: #fff;
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: #858585;
   padding: 24px 32px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  margin-bottom: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-form input{
-  margin-bottom: 5px;
-}
-form input[type="button"]{
-  margin-right: 5px;
+
+form input {
+  margin-bottom: 10px;
 }
 
 form input[type="text"] {
-  width: 90%;
-  padding: 8px;
-  border-radius: 4px;
+  padding: 12px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   font-size: 1em;
 }
 
 .table {
-  width: 80%;
+  width: 100%;
   margin: 30px auto;
   border-collapse: collapse;
-  font-size: 1.1em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 1em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .table th, .table td {
+  background: #757575;
   border: 1px solid #ddd;
-  padding: 10px 8px;
+  padding: 12px;
   text-align: center;
 }
+
 .table thead {
-  background-color: #f4f4f4;
+  background-color: #f0f0f0;
 }
 
 .table tr:nth-child(even) {
@@ -50,15 +66,27 @@ form input[type="text"] {
 }
 
 .btn-success {
-  background-color: #218838;
+  background-color: #007aff;
   color: #fff;
   border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.3s;
 }
 
 .btn-success:hover {
-  background-color: #155724;
+  background-color: #0051a8;
+}
+
+.btn-icon {
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    padding: 0; /* Remove o padding */
+    outline: none; /* Remove o contorno ao clicar */
+    font-size: 20px;
+}
+.btn-icon:disabled {
+    cursor: not-allowed; /* Muda o cursor para indicar que o botão está desabilitado */
 }
